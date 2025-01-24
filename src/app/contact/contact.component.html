@@ -1,0 +1,71 @@
+<section
+  class="d-flex flex-column align-items-center justify-content-center my-5"
+>
+  <app-start
+    [titeStart]="titleContact"
+    [customColor]="colorContact"
+  ></app-start>
+  <form action="" class="w-50 mx-auto">
+    <label
+      for="userName"
+      class="text-sec position-relative top-0"
+      [class.top-40]="!userNameValue.length"
+      >userName :
+    </label>
+    <input
+      type="text"
+      id="userName"
+      placeholder="userName"
+      name="userName"
+      class="form-control form-control-lg shadow-none border-top-0 border-start-0 border-end-0 position-relative my-2"
+      [(ngModel)]="userNameValue"
+    />
+
+    <label
+      for="userAge"
+      class="text-sec position-relative top-0"
+      [class.top-40]="!userAgeValue.length"
+      >userAge :
+    </label>
+    <input
+      type="text"
+      id="userAge"
+      placeholder="userAge"
+      name="userAge"
+      class="form-control form-control-lg shadow-none border-top-0 border-start-0 border-end-0 position-relative my-2"
+      [(ngModel)]="userAgeValue"
+    />
+
+    <label
+      for="userEmail"
+      class="text-sec position-relative top-0"
+      [class.top-40]="!userEmailValue.length"
+      >userEmail :
+    </label>
+    <input
+      type="email"
+      id="userEmail"
+      placeholder="userEmail"
+      name="userEmail"
+      class="form-control form-control-lg shadow-none border-top-0 border-start-0 border-end-0 position-relative my-2"
+      [(ngModel)]="userEmailValue"
+    />
+
+    <label
+      for="userPasswprd"
+      class="text-sec position-relative top-0"
+      [class.top-40]="!userPasswprdValue.length"
+      >userPasswprd :
+    </label>
+    <input
+      type="password"
+      id="userPasswprd"
+      placeholder="userPasswprd"
+      name="userPasswprd"
+      class="form-control form-control-lg shadow-none border-top-0 border-start-0 border-end-0 position-relative my-2"
+      [(ngModel)]="userPasswprdValue"
+    />
+
+    <button class="btn bg-sec mt-4 text-white">send Message</button>
+  </form>
+</section>
